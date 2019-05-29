@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   
- 
-
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -14,19 +12,20 @@ export class AppComponent {
   
 }
 
-$(function(){
-  $("#add").on("click", function(){
-       var val = $("input").val();
-         if(val !== ''){
-            var elem = $("<li></li>").text(val);
-            $(elem).append("<button class='remove' type='radio'>X</button>");
-            $("#myList").append(elem);
-            $("input").val("");
-          }
+/* $(function(){
+    $("#add").on("click", function(){
+         var val = $("input").val();
+           if(val !== ''){
+              var elem = $("<li></li>").text(val);
+              $(elem).append("<button class='remove' type='radio'>X</button>");
+              $("#myList").append(elem);
+              $("input").val("");
+            }
   });  
 });
+*/
 
-/*
+
 user = 'user';
 
   users = [
